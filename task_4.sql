@@ -11,7 +11,7 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = DATABASE()  -- This will use the database passed as argument
+    TABLE_SCHEMA = 'alx_book_store'-- This will use the database passed as argument
     AND TABLE_NAME = 'Books';
 ORDER BY 
     ORDINAL_POSITION;
