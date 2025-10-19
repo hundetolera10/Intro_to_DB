@@ -13,3 +13,6 @@ FROM
 WHERE 
     TABLE_SCHEMA = DATABASE()  -- This will use the database passed as argument
     AND TABLE_NAME = 'Books';
+ORDER BY 
+    ORDINAL_POSITION;
+    
